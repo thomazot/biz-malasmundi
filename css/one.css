@@ -11980,6 +11980,9 @@ body {
     color: #080808;
     order: -1;
   }
+  .categories .a--0 svg {
+    display: none;
+  }
   .categories .parent {
     position: relative;
   }
@@ -12042,11 +12045,20 @@ body {
   }
   .categories .ul--0 {
     max-width: none;
+    justify-content: space-between;
+  }
+  .categories .li--0 {
+    flex: 0 0 auto;
   }
   .categories .a--0 {
     color: #080808;
     height: 3.13rem;
     line-height: 3.13rem;
+    font-size: 0.81rem;
+    font-weight: 600;
+  }
+  .categories .a--0 svg {
+    fill: #080808;
   }
 }
 
