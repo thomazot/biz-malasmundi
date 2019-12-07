@@ -1,2 +1,63 @@
 .cms-home .header-container + .banner
-    margin: 0
+    position: relative
+    z-index: 10
+    margin-top: -16px
+
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    .owl-pagination
+        position: absolute
+        bottom: 40px
+        left: 50%
+        transform: translateY(-50%)
+
+    .owl-page
+        span
+            width: 15px
+            height: 15px
+            background: #575757
+
+        &.active
+            span
+                background: #fff
+                opacity: 1
+
+#banner__banner-after-full
+    @extend $container
+
+    .banner
+        &__wrapper
+            display: flex
+            column-count: 1
+            margin: -(gap / 2)
+
+        &__item
+            padding: (gap / 2)
+
+            &:nth-child(1)
+                flex: 0 0 41.7%
+
+            &:nth-child(2)
+                flex: 0 0 33.2%
+
+            &:nth-child(3)
+                flex: 0 0 25%
+
+            a
+                display: block
+                width: 100%
+                height: 100% !important
+
+    img
+        width: 100%
+        height: 100% !important
+        object-fit: cover
+
+@media (min-width: 993px)
+    #banner__banner-after-full
+        position: relative
+        z-index: 20
+        margin-top: -50px

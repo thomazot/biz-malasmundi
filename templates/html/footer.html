@@ -1,0 +1,44 @@
+<div class="footer__item">
+    <div class="footer__box">
+        <h3 class="footer__title">Atendimento</h3>
+        <div class="footer__content">
+            <a href="tel:1124767321" class="footer__phone">(11) 2476-7321</a>
+            <a href="tel:11953012331" class="footer__phone">(11) 95301-2331</a>
+            <a href="mailto:contato@malasmundi.com.br" class="footer__email"
+                >contato@malasmundi.com.br</a
+            >
+        </div>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__title">Institucional</h3>
+        <div class="footer__content">
+            {{block type="menubuilder/output"
+            identifier="footer-institucional"}}
+        </div>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__title">Pagamento</h3>
+        <div class="footer__content">
+            {{widget type="interface/widget_pagtos" template="interface/widgets/pagtos.phtml" identificador="pagtos_footer" pagtos="all"}}
+        </div>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__title">Segurança</h3>
+        <div class="footer__content">
+            {{widget type="interface/widget_seals" template="interface/widgets/seals.phtml" identificador="selos_footer" seals="all"}}
+        </div>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__title">Redes Sociais</h3>
+        <div class="footer__content">
+            {{widget type="interface/widget_social" template="interface/widgets/social.phtml" identificador="socials" redes="all"}}
+        </div>
+    </div>
+</div>
+<div class="footer__item">
+    {{widget type="interface/widget_newsletter" template="interface/widgets/newsletter.phtml" identificador="newsfooter" texto="<div class='news__title'>
+        <svg class='ico z-email'><use xlink:href='#z-email' /></svg>
+        <span>Newsletter</span>
+    </div>
+    <p>cadastre seu e-mail e receba novidades e ofertas exclusivas</p>" label_email="E-mail:" placeholder_email="E-mail" texto_botao="Cadastrar" exibir_nome="1" label_nome="Nome:" placeholder_nome="Nome"}}
+</div>

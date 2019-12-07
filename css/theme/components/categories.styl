@@ -1,5 +1,10 @@
 @media (max-width: 992px)
     .categories
+        &__show
+            background: #fff
+            color: color1_bg
+            order: -1
+
         .parent
             position: relative
 
@@ -42,4 +47,20 @@
 
 @media (min-width: 993px)
     .categories
-        margin-bottom: 0 !important
+        margin-left: -(gap / 2)
+        margin-right: -(gap / 2)
+        background: #fff
+        border-top: solid 1px #e6e6e7
+        border-bottom: solid 1px #e6e6e7
+        transition: all 0.2s ease
+
+        .scrolling:not(.scrolling--up) &
+            transform: translateY(-49px)
+
+        .ul--0
+            max-width: none
+
+        .a--0
+            color: color1_bg
+            height: 50px
+            line-height: 50px

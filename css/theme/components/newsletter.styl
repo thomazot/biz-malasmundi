@@ -1,0 +1,77 @@
+.newsletter
+    .footer &
+        max-width: 235px
+        margin: 0 auto
+        padding: 0
+
+    .input-text
+        box-shadow: none
+        height: 50px
+        border-radius: 5px
+        font-size: 12px
+        font-weight: regular
+        color: #999999
+        border: 0
+
+    &__text
+        padding: 0
+
+        .news__title
+            display: flex
+            justify-content: center
+            aling-items: center
+            font-size: 16px
+            font-weight: medium
+            text-transform: uppercase
+            margin-bottom: 10px
+
+            .ico
+                width: 25px
+                height: 20px
+                fill: #fff
+                margin-right: 3px
+
+        p
+            font-size: 12px
+            font-weight: medium
+            text-transform: uppercase
+
+    &__form
+        display: flex
+        margin: 0
+
+    &__name
+        flex: 0 0 100%
+        padding: 0
+        margin-bottom: 20px
+        min-width: 0
+
+    &__email
+        flex: 0 1 calc(100% - 100px)
+        min-width: 0
+        padding: 0
+
+        .input-text
+            border-radius: 5px 0 0 5px
+
+    &__submit
+        flex: 0 0 100px
+        padding: 0
+        max-width: 100px
+
+    &__btn
+        height: 50px
+        background: #fff
+        color: color1_bg
+        border-radius: 0 5px 5px 0
+        box-shadow: none
+        border: 0
+        box-shadow: -1px 0 0 #fff
+        font-size: 14px
+        font-weight: medium
+
+@media (min-width: 993px)
+    .newsletter
+        &__text
+            .news__title
+                justify-content: flex-start

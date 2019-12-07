@@ -1,4 +1,22 @@
 .logo
     .header &
+        order: -1
+        flex: 1
+        min-width: 0
+
         img, svg
             height: 48px
+
+@media (min-width: 569px)
+    .logo
+        .header &
+            flex: 0 0 auto
+
+@media (min-width: 993px)
+    .logo
+        .header &
+            flex: 0 0 33.333%
+
+            img, svg
+                margin: 0 auto
+                height: 85px

@@ -690,8 +690,8 @@
         m_categories: true,
         m_search: true,
         m_filters: true,
-        m_myaccount: true,
-        m_mycart: true,
+        m_myaccount: false,
+        m_mycart: false,
         m_parcelamento: true,
         m_frete: true,
         m_produto: true,
@@ -904,7 +904,6 @@ function default_carrossel_produtos() {
                         [568, 2],
                         [768, 3],
                         [1024, 4],
-                        [1270, 5],
                     ],
                     beforeMove: function() {
                         if (typeof $j.fn.lazyload != 'undefined') {

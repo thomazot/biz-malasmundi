@@ -1,9 +1,28 @@
-#banner__ruler
-    font-size: 10px
-    font-weight: semi-bold
-    background: color1_bg
-    color: #fff
+.ruler
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    height: 30px
+    font-size: 12px
+    font-weight: medium
 
-    & .banner
+    &__ico
+        fill: #fff
+        margin-right: 3px
+        width: 20px
+        height: 20px
+
+#banner__ruler
+    .banner
         &__wrapper
-            @extend $container
+            column-count: 1
+            display: flex
+            justify-content: space-between
+
+        &__item
+            flex: 0 0 auto
+            width: auto
+
+    .slide__html
+        justify-content: flex-start
+        aling-items: center

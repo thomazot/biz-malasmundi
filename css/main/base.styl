@@ -44,7 +44,7 @@ a, button, input, select, textarea, .order-status:after, .order-status .ico, .os
     content: ''
 
 /* Estrutura */
-.wrapper > *:not(:last-child), .header-container > *:not(:last-child), .main-container > *:not(:last-child), .col-main > *:not(:last-child), .sidebar > *:not(:last-child), .footer-container > *:not(:last-child), .footer > *:not(:last-child)
+.wrapper > *:not(:last-child), .main-container > *:not(:last-child), .col-main > *:not(:last-child), .sidebar > *:not(:last-child), .footer-container > *:not(:last-child), .footer > *:not(:last-child)
     margin-bottom: 1rem
 
 /* Tamanho mínimo do conteúdo = ~ Altura da tela - (Cabeçalho + Margens) */
@@ -1448,10 +1448,6 @@ form.searchautocomplete
     display: flex
     align-items: center
     justify-content: center
-    height: 2.75rem
-    width: 2.75rem
-    box-shadow: inset 0 0 0 1px color1_bg
-    border-radius: 100%
 
 .mycart__header .ico
     fill: color1_bg
@@ -1608,18 +1604,12 @@ form.searchautocomplete
 .myaccount
     position: relative
     z-index: 20
-    height: 2.75rem
 
 .myaccount__header a
     position: relative
     display: flex
     align-items: center
     justify-content: center
-    height: 2.75rem
-    width: 2.75rem
-    overflow: hidden
-    box-shadow: inset 0 0 0 1px color1_bg
-    border-radius: 100%
 
 .myaccount__header .thumb
     position: absolute
@@ -2823,7 +2813,6 @@ body.ie .owl-prev:before, body.ie .owl-next:before
 
 
 .header
-    padding-top: 1rem
     display: flex
     align-items: center
     justify-content: flex-end
@@ -2847,18 +2836,6 @@ body.ie .owl-prev:before, body.ie .owl-next:before
 .footer
     color: color1_font
     font-size: 0.8rem
-
-.footer .newsletter
-    background: rgba(0, 0, 0, 0.2)
-    box-shadow: -980px 0 0 rgba(0, 0, 0, 0.2), 980px 0 0 rgba(0, 0, 0, 0.2)
-    padding: 1rem 0
-    margin-top: -1rem
-    font-size: 1rem
-    border-bottom: 1px solid rgba(0, 0, 0, 0)
-
-.footer .newsletter .title
-    color: color1_font
-    text-align: center
 
 .footer .flex .title
     font-size: 1rem
@@ -9628,11 +9605,6 @@ table .change-product-link:hover
         column-count: 1
 
 /* ------ Header */
-/* ~1408px */
-@media (max-width: 88rem)
-    .header
-        padding-left: 1rem
-        padding-right: 1rem
 
 /* ~992px */
 @media (max-width: 62rem)
@@ -9659,9 +9631,6 @@ table .change-product-link:hover
 
 /* ~568px */
 @media (max-width: 35.5rem)
-    .header
-        padding: 0.125rem 0 0.125rem 1rem
-        margin: 0 !important
 
     .header .search
         flex: 0 0 auto

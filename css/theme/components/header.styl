@@ -1,4 +1,22 @@
 .header
+    width: 100%
+    max-width: none
+
     &-container
         position: sticky
         top: 0
+        background: #fff
+        padding: 0 (gap / 2)
+
+@media (min-width: 569px)
+    .header
+        position: relative
+        z-index: 20
+        background: #fff
+        justify-content: space-between
+        padding: (gap / 2) 0
+        box-shadow: 800px 0 0 #fff, -800px 0 0 #fff
+
+        &-container
+            box-shadow: none
+            background: none
