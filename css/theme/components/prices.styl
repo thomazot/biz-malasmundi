@@ -1,0 +1,46 @@
+.price-box
+    margin-bottom: 2px
+
+    .old-price
+        .label
+            display: none
+
+        .price
+            text-decoration: none
+
+            span
+                font-size: 14px
+                font-weight: regular
+                color: #999999
+
+                &:before
+                    content: 'De '
+
+    .regular-price, .special-price
+        .label
+            display: none
+
+        .price span
+            font-size: 16px
+            font-weight: semibold
+            color: color1_bg
+
+            &:before
+                content: 'Por '
+
+.price-box-avista
+    display: inline-block
+
+    .label
+        display: none
+
+    .price
+        font-size: 12px
+        font-weight: regular
+        color: #999
+
+        &:before
+            content: 'ou '
+
+        &:after
+            content: ' à vista'

@@ -49,7 +49,7 @@ a, button, input, select, textarea, .order-status:after, .order-status .ico, .os
 
 /* Tamanho mínimo do conteúdo = ~ Altura da tela - (Cabeçalho + Margens) */
 .main-container
-    min-height: calc(100vh - 9.5rem)
+    min-height: calc(100vh - 575px)
 
 
 .col-main
@@ -796,7 +796,6 @@ form.searchautocomplete
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1)
     display: flex
     flex-flow: column nowrap
-    justify-content: space-between
 
 /* custom markup */
 .product__main
@@ -4031,18 +4030,6 @@ body.safari .product-image-thumbs .thumb-link
 
 .prod__shop .add-to-cart-buttons
     position: relative
-
-/* qtd */
-.prod__shop .qty-wrapper
-    position: absolute
-    top: 50%
-    left: 0.625rem
-    transform: translateY(-50%)
-
-.prod__shop .qty-wrapper input
-    color: #fff
-    border: 1px solid rgba(0, 0, 0, 0.1)
-    background: rgba(0, 0, 0, 0.1)
 
 /* @descricao(curta) */
 .prod__short-desc
@@ -9117,43 +9104,6 @@ table .change-product-link:hover
     .logo .has-m-img .m-img
         display: block !important
 
-/* ------ Coleção de Produtos */
-/* ~568px */
-@media (max-width: 35.5rem)
-    .products__item
-        flex: 1 1 100%
-
-    .products__case
-        display: flex
-        flex-flow: row nowrap
-
-    .product__header
-        padding: 1rem 0 1rem 1rem
-        flex: 0 0 40%
-
-    .product__main
-        display: block
-
-    .product__name
-        font-size: 1rem
-        line-height: 1.2rem
-        height: 2.4rem
-        overflow: hidden
-        word-break: break-word
-        position: relative
-
-    .product__name:after
-        content: ''
-        display: block
-        height: 1.2rem
-        width: 25%
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0), #fff)
-        position: absolute
-        bottom: 0
-        right: 0
-
-    .products .configurable-swatch-list, .products .price-box-avista, .products .price-box-parcelado
-        display: none
 
 /* ------ Menu de Categorias */
 /* ~1528px */

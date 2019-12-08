@@ -1,0 +1,143 @@
+.product-image-gallery
+    box-shadow: none
+
+.product-image-thumbs
+    .thumb-link
+        box-shadow: none
+        opacity: 0.5
+
+        &.on
+            box-shadow: none
+            opacity: 1
+
+.prod
+    &__name
+        margin-bottom: 25px
+
+        h1
+            font-size: 24px
+            font-weight: regular
+
+        .sku
+            font-size: 14px
+            font-weight: regular
+            text-transform: uppercase
+            color: #9c9c9c
+
+    &__shop
+        .old-price
+            .price span
+                font-size: 19px
+
+        .regular-price, .special-price
+            .price span
+                font-size: 22px
+
+        .price-box-avista .price
+            font-size: 16px
+
+        .qty-wrapper
+            max-width: 60px
+            margin-right: 10px
+
+        .configurable
+            &:before
+                display: none
+
+            &__caption
+                font-size: 14px
+                font-weight: bold
+                text-transform: uppercase
+
+            &-swatch-list
+                a
+                    border-radius: 5px
+
+                &[data-attribute-code=tamanho]
+                    a
+                        border-radius: 50%
+                        font-size: 14px
+                        font-weight: medium
+                        color: color1_bg
+                        background: #ebebeb
+                        box-shadow: none
+
+                    .selected a
+                        background: color1_bg
+                        color: #fff
+
+        .add-to-cart-buttons
+            display: flex
+
+        .add-to-cart-btn
+            flex: 0 0 190px
+            padding: 0
+            height: 60px
+            background: color1_bg
+            font-size: 18px
+            font-weight: semibold
+            color: #fff
+            width: 190px
+            box-shadow: none
+            border-radius: 5px
+
+            &:before
+                content: 'Orçamento'
+
+            span
+                display: none
+
+            &:hover
+                background: rgba(0, 0, 0, 0.2)
+
+.tabs
+    margin-top: 20px
+
+    &__tab
+        border-top: solid 1px rgba(0, 0, 0, 0.1)
+
+@media (min-width: 569px)
+    .tabs
+        &__tab, &__tab.on
+            width: 100%
+            border: 0
+            font-size: 18px
+            font-weight: semibold
+            letter-spacing: 5px
+            text-align: center
+            text-transform: uppercase
+
+        &__content
+            border: 0
+            padding-left: 0
+            padding-right: 0
+
+            &, .std
+                font-size: 14px
+                font-weight: regular
+                color: #a7a7a7
+                text-align: center
+
+@media (min-width: 993px)
+    .product-image-container
+        display: flex
+
+    .product-image
+        flex: 1
+        min-width: 0
+
+    .more-views
+        flex: 0 0 65px
+        order: -1
+        width: 65px
+
+    .product-image-thumbs
+        display: block
+
+    .prod
+        &__img
+            flex: 1
+            min-width: 0
+
+        &__shop
+            flex: 0 0 335px

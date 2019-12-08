@@ -1,0 +1,258 @@
+.jointsales
+    .owl-wrapper-outer
+        border: 0
+
+    .jointsales__currentin .title, .jointsales__item .title
+        font-size: 14px
+        font-weight: regular
+        color: color2_bg
+
+    .price
+        color: color1_bg
+
+    .more
+        width: 60px
+        height: 60px
+        background: #fff
+        color: color1_bg
+        line-height: 1
+        transform: none
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 5px
+        font-weight: semibold
+        font-size: 20px
+        border: solid 1px #ebebeb
+
+        &:before
+            display: none
+
+        &:after
+            content: '+'
+
+    &__currentin, &__item
+        display: block
+        padding: 16px 0 30px
+        box-shadow: none
+
+        .price-box
+            display: none
+
+        select
+            box-shadow: none
+            appearance: none
+            background: #f7f7f7
+            height: 40px
+            padding: 0 20px
+            border: 0
+            font-size: 12px
+            color: #3c3733
+            padding-right: 40px
+
+    &__options
+        margin: 0 0 16px
+
+        label
+            font-size: 11px
+            font-weight: medium
+
+        li
+            position: relative
+            padding: 16px 0 0
+            flex: 0 0 100%
+
+            &:after
+                content: ''
+                position: absolute
+                bottom: 15px
+                right: 1rem
+                border-left: solid 5px transparent
+                border-right: solid 5px transparent
+                border-top: solid 5px #ff5d00
+                transform: translateY(-50%)
+
+    &__totals .economize, .parcelamento .s-juros
+        background: color2_bg
+
+    &__row
+        padding: 0
+
+    &__current
+        margin-bottom: 30px
+
+    .btn-jointsales
+        font-size: 16px
+        font-weight: semibold
+        color: #fff
+        background: #59e874
+        border: 0
+        box-shadow: none
+        height: 60px
+
+        &:hover
+            background: darken(#59e874, 20%)
+            color: #fff
+
+    &__payments
+        margin-top: 4px
+
+        .parcelamento
+            display: none
+
+        .avista
+            .label
+                display: none
+
+            .price
+                font-size: 14px
+                font-weight: regular
+
+                &:before
+                    content: 'ou '
+
+                &:after
+                    content: ' à vista'
+
+        .preco-parcelado-sem-juros
+            font-size: 17px
+            font-weight: medium
+            color: #b0b0b0
+
+            + .preco-parcelado, .upto
+                display: none
+
+            .num, .value
+                font-weight: semibold
+                color: color1_bg
+
+            .s-juros
+                background: none
+                color: #b0b0b0
+                padding: 0
+                font-size: 17px
+
+    &__totals
+        .economize
+            display: none
+
+        .todos-juntos
+            font-size: 0
+
+            .price
+                font-size: 16px
+                font-weight: regular
+                color: color1_bg
+
+                &:before
+                    content: 'De '
+
+        .comprando-junto
+            font-size: 0
+
+            > .price
+                font-size: 24px
+                font-weight: regular
+                color: color1_bg
+
+                .price
+                    font-weight: regular
+
+                span
+                    color: color1_bg
+
+                &:before
+                    content: 'Por '
+
+@media (min-width: 569px)
+    .jointsales
+        &__title
+            display: flex
+            align-items: center
+            justify-content: center
+            font-size: 18px
+            font-weight: semibold
+            letter-spacing: 5px
+            height: 60px
+            text-transform: uppercase
+
+        .more
+            margin-right: -65px
+
+@media (min-width: 993px)
+    .jointsales
+        &__currentin
+            padding-right: 30px
+
+        &__currentin, &__item
+            img
+                width: 260px
+                height: 260px
+                object-fit: contain
+
+        &__current
+            margin-bottom: 0
+            padding-bottom: 0
+
+            + .jointsales__list
+                justify-content: flex-start
+                flex: 1
+                min-width: 50%
+
+        &__row
+            justify-content: flex-start
+            display: grid
+            grid-template-areas: 'join1 join2 join3' 'join1 join2 join4' 'join1 join2 join5'
+            grid-template-rows: 1fr 20px 1fr
+
+        &__current
+            grid-area: join1
+
+        &__list
+            grid-area: join2
+            margin-right: 60px
+            padding-left: 90px
+
+        &__totals
+            grid-area: join3
+            border: solid 1px #f9f9f9
+            border-bottom: 0
+            border-radius: 4px 4px 0 0
+            padding: 20px 20px 0
+            background: #f9f9f9
+
+            .comprando-junto
+                padding: 10px 0
+
+        &__payments
+            grid-area: join4
+            border-right: solid 1px #f9f9f9
+            border-left: solid 1px #f9f9f9
+            padding: 0 20px
+            background: #f9f9f9
+
+        &__action
+            grid-area: join5
+            display: flex
+            align-self: flex-start
+            padding: 20px
+            border: solid 1px #f9f9f9
+            border-top: 0
+            border-radius: 0 0 4px 4px
+            margin-top: 0
+            background: #f9f9f9
+
+            button
+                margin-bottom: -50px
+
+        &__item
+            flex: 0 1 320px
+            min-width: 0
+            max-width: none
+            padding: 0 30px 0
+
+        &__totals, &__payments, &__action
+            flex: 0 0 33.333%
+
+        &__options
+            display: block

@@ -1139,19 +1139,9 @@ function is468() {
  */
 function hideHeader(status) {
     if (status) {
-        $j('.header-container').animate(
-            {
-                top: '-' + $j('.header-container').outerHeight() + 'px',
-            },
-            200
-        )
+        $j('.header-container').addClass('up')
     } else {
-        $j('.header-container').animate(
-            {
-                top: '0px',
-            },
-            200
-        )
+        $j('.header-container').removeClass('up')
     }
     return false
 }
@@ -1346,6 +1336,15 @@ $j.fn.neonTheme.custom = {
             mode: 'prepend',
             ratio: false,
         },
+
+        'z-prev': {
+            selector: '.owl-prev',
+            mode: 'html',
+        },
+        'z-next': {
+            selector: '.owl-next',
+            mode: 'html',
+        },
     },
 }
 
@@ -1453,6 +1452,12 @@ $j(document)
 
         // Header sticky 
         stickybits('.header-container');
+
+        var categoryImage = $('.category-image')
+
+        if(categoryImage.length) {
+            $('.header-container').after(categoryImage)
+        }
     })
     .on('resizeStop', function(e) {
         // Safe window.resize
