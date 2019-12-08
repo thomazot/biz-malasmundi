@@ -12591,6 +12591,9 @@ body:not(.user-logged) .logged {
   color: #080808;
   display: block;
 }
+.prod__shop .logged {
+  margin-bottom: 1.25rem;
+}
 
 .header .logo {
   order: -1;
