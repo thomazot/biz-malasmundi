@@ -85,13 +85,21 @@
         font-size: 16px
         font-weight: semibold
         color: #fff
-        background: #59e874
+        background: #000
         border: 0
+        border-radius: 5px
         box-shadow: none
         height: 60px
+        width: 100%
+
+        span
+            display: none
+
+        &:before
+            content: 'Orçamento'
 
         &:hover
-            background: darken(#59e874, 20%)
+            background: darken(#000, 20%)
             color: #fff
 
     &__payments
@@ -181,6 +189,9 @@
 
 @media (min-width: 993px)
     .jointsales
+        .todos-juntos, .comprando-junto, .avista
+            padding-left: 15px !important
+
         &__currentin
             padding-right: 30px
 
@@ -204,6 +215,7 @@
             display: grid
             grid-template-areas: 'join1 join2 join3' 'join1 join2 join4' 'join1 join2 join5'
             grid-template-rows: 1fr 20px 1fr
+            grid-template-columns: 1fr 45% 280px
 
         &__current
             grid-area: join1
@@ -218,7 +230,7 @@
             border: solid 1px #f9f9f9
             border-bottom: 0
             border-radius: 4px 4px 0 0
-            padding: 20px 20px 0
+            padding: 40px 20px 0
             background: #f9f9f9
 
             .comprando-junto

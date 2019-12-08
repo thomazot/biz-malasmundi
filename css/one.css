@@ -12361,13 +12361,21 @@ body {
   font-size: 1rem;
   font-weight: 700;
   color: #fff;
-  background: #59e874;
+  background: #000;
   border: 0;
+  border-radius: 5px;
   box-shadow: none;
   height: 3.75rem;
+  width: 100%;
+}
+.jointsales .btn-jointsales span {
+  display: none;
+}
+.jointsales .btn-jointsales:before {
+  content: 'Orçamento';
 }
 .jointsales .btn-jointsales:hover {
-  background: #21e045;
+  background: #000;
   color: #fff;
 }
 .jointsales__payments {
@@ -12456,6 +12464,11 @@ body {
   }
 }
 @media (min-width: 993px) {
+  .jointsales .todos-juntos,
+  .jointsales .comprando-junto,
+  .jointsales .avista {
+    padding-left: 0.94rem !important;
+  }
   .jointsales__currentin {
     padding-right: 1.88rem;
   }
@@ -12482,6 +12495,8 @@ body {
     grid-template-areas: 'join1 join2 join3' 'join1 join2 join4' 'join1 join2 join5';
     -ms-grid-rows: 1fr 20px 1fr;
     grid-template-rows: 1fr 20px 1fr;
+    -ms-grid-columns: 1fr 45% 280px;
+    grid-template-columns: 1fr 45% 280px;
   }
   .jointsales__current {
     grid-area: join1;
@@ -12496,7 +12511,7 @@ body {
     border: solid 1px #f9f9f9;
     border-bottom: 0;
     border-radius: 4px 4px 0 0;
-    padding: 1.25rem 1.25rem 0;
+    padding: 2.5rem 1.25rem 0;
     background: #f9f9f9;
   }
   .jointsales__totals .comprando-junto {
