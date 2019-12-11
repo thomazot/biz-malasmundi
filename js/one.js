@@ -1319,8 +1319,8 @@ $j.fn.neonTheme.custom = {
     m_categories: true, // ativa o responsivo do Menu de Categorias
     m_search: true, // ativa o responsivo da Busca
     m_filters: true, // ativa o responsivo dos Filtros do Catálogo
-    m_myaccount: true, // ativa o responsivo da Minha Conta
-    m_mycart: true, // ativa o responsivo do Meu Carrinho
+    m_myaccount: false, // ativa o responsivo da Minha Conta
+    m_mycart: false, // ativa o responsivo do Meu Carrinho
     m_parcelamento: true, // ativa o responsivo do parcelamento na página de produto
     m_frete: true, // ativa o responsivo do cálculo de frete na página do produto
     m_produto: true, // ativa o responsivo de cada bloco da página de produto

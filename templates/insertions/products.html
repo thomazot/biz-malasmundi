@@ -17,10 +17,7 @@
         @endif(is_disponivel)
     </div>
     
-    <div class="logged">
-        <span>Cadastre-se e veja o preço</span>
-        <strong>Exclusivo para lojistas</strong>
-    </div>
+    {{widget type="interface/widget_scripts" template="interface/widgets/scripts.phtml" script_id="texto-da-listagem-logado"}}
     
     <div class="products__actions">
         @bt(comprar "Orçamento")

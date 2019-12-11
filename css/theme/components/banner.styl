@@ -61,3 +61,12 @@
         position: relative
         z-index: 20
         margin-top: -50px
+
+@media (max-width: 500px)
+    #banner__banner-after-full
+        .banner__wrapper
+            display: block
+
+        .banner__item
+            &:nth-child(1), &:nth-child(2), &:nth-child(3)
+                flex: 0 0 100%

@@ -1,0 +1,41 @@
+.upsell
+    &:before
+        content: 'Outras Cores: '
+        font-size: 14px
+        font-weight: bold
+        text-transform: uppercase
+        display: block
+        padding-bottom: 10px
+
+    &__title
+        display: none
+
+    .products
+        padding: 0
+
+        a
+            display: block
+            border: solid 1px #fff
+            overflow: hidden
+            padding: 10px
+
+            &:hover
+                border: solid 1px #000
+                border-radius: 5px
+
+        &__list
+            width: auto
+            margin: 0
+
+        &__item
+            flex: 0 0 auto
+            min-width: 0
+            padding: 0
+
+        img
+            width: 44px
+            height: 44px
+            object-fit: contain
+
+        &__main
+            display: none
